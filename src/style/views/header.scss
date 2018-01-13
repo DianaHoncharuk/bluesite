@@ -1,0 +1,112 @@
+.main-header{
+  .top-header{
+    div{
+      @include font(16px, $textSecondary, 400, $font-regular );
+      display: inline-block;
+      a{
+        @include font(20px, $textSecondary, 400, $font-regular );
+        padding: 15px 0;
+        margin-left: 10px;
+        display: inline-block;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .social{
+      float: right;
+      span{
+        @include font(18px, $textSecondary, 400, $font-regular);
+        letter-spacing: 0.45px
+      }
+      ul{
+        padding-left: 0;
+        display: inline-block;
+        li{
+          display: inline-block;
+          a{
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            i{
+              display: block;
+              height: 100%;
+            }
+            .fa-pinterest{
+              background-color: $secondaryColor;
+            }
+            .fa-twitter{
+              background-color: $bgIconSecond;
+            }
+            .fa-facebook{
+              background-color: $bgiconThird;
+            }
+          }
+        }
+      }
+    }
+  }
+  .top-menu{
+    img{
+      width: 100%;
+      height: auto;
+    }
+    ul{
+      padding: 0;
+      float: right;
+      li{
+        display: inline-block;
+        margin-bottom: 3px;
+        margin-right: 3px;
+        &:hover{
+          border-bottom: 4px solid $secondaryColor;
+        }
+        a{
+          display: inline-block;
+          text-transform: uppercase;
+          @include font(14px,$textHeaderPrimary, 700, $font-bold);
+          &:hover{
+            text-decoration: none;
+          }
+        }
+        .order{
+          color: $secondaryColor;
+        }
+      }
+    }
+
+  }
+  .middle-header{
+    height: 470px;
+    background: url(/img/img_boy.png) 0 100% no-repeat,url(/img/light.png) no-repeat 68% 103px,url(/img/books_lamp.png) 100% 100% no-repeat;
+    h1{
+      @include font(52px, $textSecondary, 700, $font-bold);
+      text-align: center;
+      text-transform: uppercase;
+      margin: 70px 0 40px 0;
+      line-height: 0;
+    }
+    .subtitle{
+      @include font(36px, $textSecondary, 400, $font-semi-bold);
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 0 50px 0;
+    }
+    h2{
+      @include font(27px, $textHeaderPrimary, 300, $font-light);
+      text-transform: uppercase;
+      margin: 0 0 25px 40px;
+      line-height: 0;
+    }
+    .header-text{
+      @include font(18px, $textHeaderPrimary, 300, $font-regular);
+      margin: 0 0 0 40px;
+      line-height: 1.2;
+    }
+    .live-chat{
+      top: 45px;
+      position: absolute;
+    }
+  }
+}

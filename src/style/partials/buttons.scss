@@ -1,0 +1,15 @@
+.live-chat{
+  background: url("/img/live-chat-img.png") no-repeat 5px 50%;
+  display: inline-block;
+  border: 1px solid $textSecondary;
+  background-color: $bgColorPrimaryDark;
+  @include font(18px, $textSecondary, 400, $font-semi-bold);
+  text-transform: uppercase;
+  padding: 25px 15px 25px 70px;
+  line-height: 0;
+  &:hover{
+    text-decoration: none;
+    color: $textSecondary;
+    background-color: $secondaryColor;
+  }
+}

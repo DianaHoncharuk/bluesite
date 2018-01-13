@@ -1,0 +1,107 @@
+main {
+  .HiW-block-two {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #cccccc;
+    background-color: #e84c3d;
+    margin-top: 63px;
+    text-align: center;
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 58px;
+      background-color: $itemColor1;
+      bottom: 57px;
+      position: relative;
+      right: 6px;
+    }
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #333333;
+      background-color: darkorange;
+      border-radius: 50%;
+      position: relative;
+      bottom: 115px;
+      left: 2px;
+    }
+  }
+  .text-block{
+    column-count: 2;
+    column-gap: 35px;
+    text-align: justify;
+  }
+  .HiW-block{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #cccccc;
+    background-color: #e84c3d;
+    text-align: center;
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #333333;
+      background-color: #14a85c;
+      border-radius: 50%;
+      position: relative;
+      top: 13px;
+      left: 2px;
+    }
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 63px;
+      background-color: $itemColor1;
+      margin-top: 68px;
+      position: relative;
+      right: 6px;
+    }
+  }
+  .text-align{
+    text-align: center;
+  }
+  .HiW-text{
+    @include font(16px, $bgColorFooter - #111, 400, $font-regular);
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .HiW-text-two {
+    @include font(16px, $bgColorFooter - #111, 400, $font-regular);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 76px;
+    margin-left: 10px;
+  }
+
+  .border-bottom{
+    border-bottom: 1px dashed $itemColor1;
+  }
+  .HiW-block-center{
+    text-align: center;
+  }
+  .HiW-block-right{
+    text-align: right;
+    .round-green{
+      margin: -6px 184px -7px;
+    }
+  }
+  .HiW-text-two {
+    @include font(16px, $bgColorFooter - #111, 400, $font-regular);
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 2px;
+    margin-left: 1px;
+  }
+}
